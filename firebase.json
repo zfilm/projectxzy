@@ -1,14 +1,14 @@
 {
-  "rewrites": [
-    {
-      "source": "**/!{*.*}",
-      "destination": "/index.html"
-    }
-  ],
   "database": {
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "build/bundled"
+    "public": "build/bundled",
+    "rewrites": [
+      {
+        "source": "**/!{*.*}",
+        "destination": "/index.html"
+      }
+    ]
   }
 }
